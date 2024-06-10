@@ -1,0 +1,842 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  /* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color:#fff;
+    line-height: 1.6;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 200px;
+}
+
+
+.logo img {
+    width: 140px; /* Set the width to 60px */
+    height: auto; /* Automatically adjust height */
+   
+    transition: all 0.3s ease; /* Add transition for smooth animation */
+}
+
+/* On hover, scale up the logo */
+.logo img:hover {
+    transform: scale(1.1); /* Scale up by 10% */
+    box-shadow: 0 0 10px 5px gold; /* Add golden shadow */
+    border-radius: 20%;
+}
+
+/* Navbar styles */
+.navbar {
+    padding: 20px 20px; /* Adjust padding as needed */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the container */
+.container {
+    position: relative;
+  }
+  
+  /* Style the sidepanel */
+  .sidepanel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0; /* Position to the right */
+    background-color: #044a42;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  /* Style links inside the sidepanel */
+  .sidepanel a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* Change color on hover */
+  .sidepanel a:hover {
+    color: #f5a623;
+  }
+  
+  /* Position and style the close button */
+  .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px; /* Adjusted left position */
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style the open button */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 50px; /* Adjusted top position */
+    right: 30px; /* Added space from the right edge */
+    background-color:  #f5a623;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+}
+  
+  .openbtn:hover {
+    background-color:#044a42;
+  }
+  
+ 
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    width: 100%;
+    height:600px; /* Adjust height as needed */
+    overflow: hidden;
+    
+}
+.hero .container {
+    position: relative;
+    z-index: 1; /* Ensure the text appears above images */
+    color: #f5a623; /* Text color */
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 100px; /* Adjust top padding as needed */
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h2 {
+    font-size: 40px; /* Heading font size */
+    margin-bottom: 20px; /* Space below heading */
+}
+.hero p {
+    font-size: 18px; /* Paragraph font size */
+}
+
+/* CSS for Images */
+.hero img {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+}
+
+.services, .our-services {
+    background-color: #ffffff;
+    padding: 100px 0;
+    margin-top: -30px; /* Adjust the margin-top to your preference */
+    margin-bottom: 50px;
+}
+
+.services .middle {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    transition: color 0.3s; /* Smooth transition effect */
+}
+
+.services p:hover {
+    color:  #044a42; /* Change color to green on hover */
+}
+
+.our-services {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 10px 30px 10px;
+    flex: 1;
+    max-width: 1000px; /* Optional: Limit the maximum width of each container */
+    text-align: left; /* Align text left within each container */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+    border: 2px solid #8b8b8b; /* Original border */
+    border-width: 4px; /* Double the border width */
+    border-color: #dcdcdc; /* Light grey color */
+}
+
+.service:hover {
+    background-color:  #f5a623; /* Change the background color to gold on hover */
+}
+
+.service h3 {
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.hero1 {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.hero1 .container {
+    position: relative;
+    z-index: 1; /* Ensure the text appears above images */
+    color: #f5a623; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 100px; /* Adjust top padding as needed */
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero1 h2 {
+    font-size: 40px; /* Heading font size */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.hero1 p {
+    font-size: 18px; /* Paragraph font size */
+}
+
+/* CSS for Images */
+.hero1 .image-container1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero1 .image-container1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+}
+
+
+
+.about-section {
+    padding: 50px;
+    background-color: #fff;
+}
+
+.about-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #333;
+    text-shadow: #f5a623;
+}
+
+.owner {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.owner-photo {
+    width: 400px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.owner-message {
+    position: absolute;
+    top: 110px; /* Move down by 20 pixels */
+    left: 300px; /* Move right by 20 pixels */
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    padding: 50px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    border-color: #666;
+}
+
+
+.owner-name {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.mission-vision {
+    text-align: center;
+    color: #333;
+}
+
+.mission-vision h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.mission-vision p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.mission-icon img,
+.vision-icon img,
+.qualities-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 20pxs;
+    
+}
+
+.mission-vision p:hover {
+    color: #044a42;
+    font-size: 17px; 
+    transition: color 0.3s ease, font-size 0.3s ease; /*  transition to color and font-size */
+}
+
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+}
+
+.team h2 {
+    margin-bottom: 80px;
+    color: #333;
+    margin-right: -880px;
+    
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px; /* Adjust as needed */
+    height: 180px; /* Adjust as needed */
+    border-radius: 30%; /* to make the image circular */
+}
+
+.team-member h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.team-member p {
+    margin-bottom: 20px;
+    color: #044a42;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    background-color: #f0f0f0; /* Background color for the header */
+    text-align: center;
+    overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+.header img {
+    width: 100%; /* Make the image width 100% */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f5a623; 
+    text-shadow: #000000;
+    font-size: 36px; /* Adjust font size as needed */
+}
+
+
+.container h2 {
+    text-align: center;
+    margin: 20px 0; /* Adjusted margin */
+    color: #044a42;
+    padding-bottom: 30px;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.our-service {
+    background-color: #f3f3f3;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.our-service:hover {
+    transform: translateY(-5px);
+    color: #044a42;
+}
+
+.our-service:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+.our-service h3 {
+    color: #044a42;
+}
+
+.our-service p {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.our-service img {
+    width: 100%; /* Set the image width to 100% of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin-bottom: 10px; /* Add margin below the image */
+}
+
+
+
+.projects {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.projects h2 {
+    text-align: center;
+    color: #044a42;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.project p {
+    color: #666;
+}
+
+.project a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #f5a623;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #044a42;
+    
+}
+
+
+/* Style text inputs, select dropdowns, and textareas */
+.container2 input[type="text"],
+.container2 select,
+.container2 textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #044a42;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Style submit button */
+.container2 input[type="submit"] {
+    background-color: #044a42;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for submit button */
+.container2 input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Container styling */
+.container2 {
+    border-radius: 8px;
+    background-color: #f5a623;
+    padding: 30px;
+    max-width: 500px; /* Limit form width */
+    margin: 0 auto 30px; /* Center the form and add margin to bottom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+    margin-top: 40px;
+}
+
+/* Header styling */
+.headerr {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    background-image: url('image/calls.jpg'); /* Background image for the header */
+    background-size: cover; /* Cover the entire header area */
+    background-position: center; /* Center the background image */
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Apply a blur effect to the background image */
+.headerr::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Adjust the blur intensity */
+}
+
+.headerr h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f5a623; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+    font-size: 36px; 
+}
+
+/* "Let's get in touch" styling */
+.container2 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.gallery {
+    position: relative; /* Set position to relative */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    text-align: center; /* Center-align the content */
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+
+.gallery h2 {
+    margin-bottom: 20px; /* Add space below the heading */
+    /* color: #f5a623; */
+    /* background-color: #044a42;  */
+    padding: 60px 30px; /* Add padding for better visibility */
+    border-radius: 5px; /* Add border radius for better aesthetics */
+    text-decoration: none;
+}
+
+.gallery .gallery-button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #044a42;
+    color: #d98c14;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.gallery .gallery-button:hover {
+    background-color: #d98c14;
+    color: #044a42;
+}
+
+.gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.gallery-item img:hover {
+    transform: rotate(360deg); /* Rotate the image 360 degrees when hovered */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer styles */
+footer {
+    background-color: #044a42; /* Change the background color as desired */
+    color: #fff; /* Change the text color as desired */
+    padding: 20px 0; /* Adjust the padding as needed */
+    text-align: center; /* Align text to the center */
+}
+
+.footer .container {
+    max-width: 1200px; /* Set max-width of container */
+    margin: 0 auto; /* Center the container */
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 30px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #f5a623;
+    color: white;
+    border-radius: 20px;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #f5a623;
+    color: white;
+    border-radius: 20px;
+  }
+
+  .fa-instagram {
+    background: #f5a623;
+    color: white;
+    border-radius: 20px;
+  }
+
+  .fa-linkedin {
+    background: #f5a623;
+    color: white;
+    border-radius: 20px;
+  }
+
+  .footer .contact-info {
+    margin-top: 30px; /* Adjust margin to separate from social icons */
+    text-align: center; /* Align text to the center */
+    color: #fff; /* Set text color */
+}
+
+.footer .contact-info p {
+    margin: 5px 0; /* Adjust margin for each paragraph */
+}
+
+.footer-logo {
+    max-width: 140px; /* Set max-width of logo */
+    display: block; /* Make the image a block element */
+    margin: 0 auto -28px; /* Center the image horizontally and add some margin below */
+}
+
+/* For screens smaller than 768px (typical tablets and mobile phones) */
+@media (max-width: 767px) {
+    .container {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+        margin-top: 100px; /* Adjust margin-top for smaller screens */
+    }
+
+    .hero,
+    .hero1 {
+        height: 400px; /* Adjust hero section height for smaller screens */
+    }
+
+    .hero .container,
+    .hero1 .container {
+        padding-top: 50px; /* Adjust top padding for smaller screens */
+    }
+
+    .navbar {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .openbtn {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        top: 40px; /* Adjust top position for smaller screens */
+    }
+
+    .header,
+    .headerr {
+        height: 300px; /* Adjust header height for smaller screens */
+    }
+
+    .header h1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .footer-logo {
+        margin-bottom: 0; /* Remove margin-bottom for smaller screens */
+    }
+}
+
+/* For screens between 768px and 1199px (typical tablets and smaller desktops) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        padding: 0 15px; /* Adjust padding for medium screens */
+    }
+}
+
+/* For screens 1200px and larger (typical desktops) */
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 20px; /* Adjust padding for large screens */
+    }
+
+    .hero,
+    .hero1 {
+        height: 600px; /* Adjust hero section height for large screens */
+    }
+}
+

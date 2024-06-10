@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deviro services PTY LTD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        
+
+
+    <style>
+        h2.txt {
+            border: 2px solid #044a42;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        .service p {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        /* Show paragraphs on hover */
+        .service:hover p {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <!-- <nav class="navbar"> -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="image/file-re.png" alt="logo"></a>
+        </div>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">☰ </button>
+    </div>
+
+    <div class="gallery">
+        <a href="Projects.html"  class="gallery-button"><h2>Our Impressive Work</h2></a>
+        <!-- <button>Back to Projects</button> -->
+        <div class="gallery-item">
+            <img src="image/pic1.jpg" alt="Landscape Design 1">
+        </div>
+        <div class="gallery-item">
+            <img src="image/pic2.jpg" alt="Landscape Design 2">
+        </div>
+        <div class="gallery-item">
+            <img src="image/pic3.jpg" alt="Landscape Design 3">
+        </div>
+        <!-- Add more gallery items as needed -->
+    </div>
+    
+     <!-- Footer -->
+     <footer>
+        
+        <div class="container">
+            <hr style="border-color: #f5a623;">
+            <img src="image/file-re.png" alt="Logo" class="footer-logo">
+            <p>Get in touch with us</p>
+
+            <div class="contact-info">
+                <p>158 JABULANI STREET
+                    LOTUS GARDENS, EXT 2,
+                    0008</p> <!-- Address -->
+                <p>Phone: +27(0) 60 833 7232
+
+                </p> <!-- Contact number -->
+            </div>
+            
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100093172203431" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/devirolandscape/" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+
+                <hr style="border-color: #f5a623;">   
+                <p>&copy; 2024 Landscape Architecture. All rights reserved.</p>
+            </div>
+            
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

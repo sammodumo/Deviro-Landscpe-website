@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deviro services PTY LTD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        
+
+
+    <style>
+        h2.txt {
+            border: 2px solid #044a42;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        .service p {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        /* Show paragraphs on hover */
+        .service:hover p {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+    <!-- <nav class="navbar"> -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="image/file-re.png" alt="logo"></a>
+        </div>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">☰ </button>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-header">
+                <h2>About Us</h2>
+            </div>
+            <div class="owner-container">
+                <div class="owner">
+                    <div class="owner-photo-container">
+                        <img src="image/owner.jpeg" alt="Owner" class="owner-photo">
+
+                    </div>
+                    <p class="owner-name">Ezrah Maluleke, Founder</p>
+                </div>
+            </div>
+            <div class="mission-vision">
+                
+                <h3>Our Mission</h3>
+                <div class="mission-icon"><img src="image/mission icon.png" alt="Mission Icon"></div>
+                <p>To deliver the best product and services as committed and in the most cost-efficient
+                    way and active towards our clients, and to build values of relationships in the industry
+                    of landscape architecture and horticulture.</p>
+
+                <h3>Our Vision</h3>
+                <div class="vision-icon"><img src="image/viiiiiiiiii.png" alt="Vision Icon"></div>
+                <p>Landscape architecture has a way of healing the mind, soul and the physical. We need
+                    to partner internationally and apply new elements of aspects and designs.</p>
+        
+                <h3>Qualities</h3>
+                <div class="qualities-icon"><img src="image/values icon.png" alt="Qualities Icon"></div>
+                <p>Deviro recognises its obligations to act responsibly, ethically and with integrity in all its
+                    dealings, its staff, customers and the environment. Our business ethics contributes to
+                    our reputation for integrity as key to secure the loyalty of our customers and
+                    becoming the business partner of choice. It will always be our policy to
+                    conduct business in compliance with all applicable laws and regulations and
+                    in accordance with the highest ethical standards</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="team-member">
+            <h2>Meet Our Dedicated Team</h2>
+            <img src="image/owner.jpeg" alt="Team Member 1">
+            <h4>Ezrah Maluleke</h4>
+            <p>Professional Landscape Technologist</p>
+        </div>
+    
+        <div class="team-member">
+            <img src="image/tshepo.jpeg" alt="Team Member 2">
+            <h4>Tshepo Hlatywayo</h4>
+            <p>Professional Civil Engineer</p>
+        </div>
+
+        <div class="team-member">
+            <img src="image/member.jpeg" alt="Team Member 3">
+            <h4>Tshepiso Bahula</h4>
+            <p>Professional Horticulturist</p>
+        </div>
+    
+        <!-- Add more team members as needed -->
+    </section>
+    
+
+    <section class="hero">
+        <div class="container">
+            <h2 style="color: #fff;">About the company</h2>
+        
+            <p style="color: #fff;">Deviro services (PTY) Ltd is a private company founded by Ezrah Maluleke in 2019 and we
+                are hundred-percent black ownership. We specialize in professional landscape architecture
+                and horticulture. Our team carries various experts with over decades work experience for
+                the required landscape and construction services. We are situated in Tshwane and has been
+                in service both international and local. As a company that is registered with South African
+                Council for the Landscape Architectural Profession (SACLAP) and we thrive to design and
+                install what is required by our clients.</p>
+        </div>
+        <!-- Image Rotation -->
+        <div class="image-container">
+            <img src="image/1.jpeg" alt="Image 1">
+            <img src="image/2.jpeg" alt="Image 2" style="opacity: 0;">
+            <img src="image/3.jpeg" alt="Image 3" style="opacity: 0;">
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        
+        <div class="container">
+            <hr style="border-color: #f5a623;">
+            <img src="image/file-re.png" alt="Logo" class="footer-logo">
+            <p>Get in touch with us</p>
+
+            <div class="contact-info">
+                <p>158 JABULANI STREET
+                    LOTUS GARDENS, EXT 2,
+                    0008</p> <!-- Address -->
+                <p>Phone: +27(0) 60 833 7232
+
+                </p> <!-- Contact number -->
+            </div>
+            
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100093172203431" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/devirolandscape/" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+
+                <hr style="border-color: #f5a623;">   
+                <p>&copy; 2024 Landscape Architecture. All rights reserved.</p>
+            </div>
+            
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

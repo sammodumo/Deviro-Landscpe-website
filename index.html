@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deviro services PTY LTD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    
+
+
+    <style>
+        h2.txt {
+            border: 2px solid #044a42;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 10px;
+            background-color: #f5a623;
+        }
+
+        h2.txt:hover{
+            background-color: #044a42;
+            color: #f5a623;
+        }
+
+
+        .service p {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        /* Show paragraphs on hover */
+        .service:hover p {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <!-- <nav class="navbar"> -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="image/file-re.png" alt="logo"></a>
+        </div>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">☰ </button>
+    </div>
+    <!-- </nav> -->
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2 style="color: #f5a623;">Welcome to Our Landscape Architectural Services</h2>
+            <p>Transforming your outdoor space into a work of art.</p>
+        </div>
+        <!-- Image Rotation -->
+        <div class="image-container">
+            <img src="image/pic1.jpg" alt="Image 1">
+            <img src="image/pic2.jpg" alt="Image 2" style="opacity: 0;">
+            <img src="image/pic3.jpg" alt="Image 3" style="opacity: 0;">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="middle">
+            <h2>WHO WE ARE AND WHAT WE DO BEST</h2>
+            <p>Deviro services (PTY) L.td is a private company founded by Ezrah Maluleke in 2019 and we
+                are hundred-percent black ownership. We specialize in professional landscape architecture
+                and horticulture. Our team carries various experts with over decades work experience for
+                the required landscape and construction services. We are situated in Tshwane and has been
+                in service both international and local. As a company that is registered with South African
+                Council for the Landscape Architectural Profession (SACLAP) and we thrive to design and
+                install what is required by our clients.</p>
+
+                <a href="Services.html"><h2 class="txt">Our Services</h2></a>
+
+            <!-- Service Details -->
+            <div class="our-services"> <!-- Changed section to div -->
+                <div class="service">
+                    <h3>Landscape Architecture and Design</h3>
+                    <p>We are passionate about design processing, design brief for implementations. Site analysis,
+                        evaluation
+                        and recommendations, framework, guidelines and over ten advanced concepts.</p>
+                </div>
+                <div class="service">
+                    <h3>Landscape Installation and Project Management</h3>
+                    <p>We bring over a decade of knowledge and experience to your project. We have the creativity to
+                        offer "Out
+                        of the box" ideas and designs. We are familiar with the correct materials and plants to use for
+                        your
+                        project. We have the experience to do the specialized installations our competitors aren’t
+                        capable of
+                        producing!</p>
+                </div>
+                <div class="service">
+                    <h3>Horticulture and Maintenance</h3>
+                    <p>We offer erosion control methods on construction sites or as an alternative to the traditional
+                        process of
+                        seed broadcasting. It is very effective on steep slopes and sloping lawns. The advantage of
+                        hydroseeding
+                        is that large areas can be completed in very short timeframes with quick germination results.
+                        Should you
+                        require a different vegetation than grass as an end-result, we have a variety of low water
+                        requirement
+                        plants/groundcovers/creepers that can be used as alternative.</p>
+                </div>
+                
+            </div>
+            <!-- Closed our-services div -->
+        </div>
+
+    </section> <!-- Closed services section -->
+
+    <section class="hero1">
+        <div class="container">
+            <h2 style="color: #f5a623;">Our Amazing Work</h2>
+
+            <p style="color:#f5a623;">We bring over decade of knowledge and experience to your project. We have the
+                creativity to offer “Out
+                of the box” ideas and designs. We are familiar with the correct materials and plants to use for your
+                project. We have the experience to do the specialized installations our competitors aren’t capable of
+                producing!!</p>
+ 
+        </div>
+
+        
+        <!-- Image Rotation -->
+        <div class="image-container1">
+            <img src="image/f1.jpeg" alt="Image 1">
+            <img src="image/f2.jpeg" alt="Image 2" style="opacity: 0;">
+            <img src="image/f3.jpeg" alt="Image 3" style="opacity: 0;">
+        </div>
+    </section>
+
+    <footer>
+        
+        <div class="container">
+            <hr style="border-color: #f5a623;">
+            <img src="image/file-re.png" alt="Logo" class="footer-logo">
+            <p>Get in touch with us</p>
+
+            <div class="contact-info">
+                <p>158 JABULANI STREET
+                    LOTUS GARDENS, EXT 2,
+                    0008</p> <!-- Address -->
+                <p>Phone: +27(0) 60 833 7232
+
+                </p> <!-- Contact number -->
+            </div>
+            
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100093172203431" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/devirolandscape/" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+
+                <hr style="border-color: #f5a623;">   
+                <p>&copy; 2024 Landscape Architecture. All rights reserved.</p>
+            </div>
+            
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
